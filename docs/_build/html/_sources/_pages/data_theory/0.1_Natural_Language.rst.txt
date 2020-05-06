@@ -1,4 +1,0 @@
-Data: Natural Language Processing 📖
-=========================================
-
-*Natural Language Processing* (NLP), is an incredibly interesting area of work. 
