@@ -6,6 +6,7 @@
 {% block footer %}
   <script type="text/javascript">
     jQuery(function() { Search.loadIndex("{{ pathto('searchindex.js', 1) }}"); });
+    console.log("{{ pathto('searchindex.js', 1) }}");
   </script>
   {{ super() }}
 {% endblock %}
