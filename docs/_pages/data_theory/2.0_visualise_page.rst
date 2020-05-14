@@ -1,0 +1,14 @@
+Visualisation
+_______________
+
+This section aims to collect well formatted plots and advanced plots for reference.	 
+
+.. raw:: html
+
+        <hr>
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+
+   2_visualising/*

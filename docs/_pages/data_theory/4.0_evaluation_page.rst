@@ -1,0 +1,15 @@
+Evaluating Results
+___________________
+
+Different data types and problems require different metrics to evaluate performance. This section will provide advice and explanations for different scenarios.
+
+
+.. raw:: html
+
+        <hr>
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+
+   4_eval/*

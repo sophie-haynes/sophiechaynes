@@ -1,0 +1,14 @@
+Processing Data
+_______________
+
+Depending on the data science problem and the data type, different processes will need to be applied. This section will provide reference for a variety of scenarios and suggest what steps may be suitable to each.
+
+.. raw:: html
+
+        <hr>
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+
+   1_processing_data/*

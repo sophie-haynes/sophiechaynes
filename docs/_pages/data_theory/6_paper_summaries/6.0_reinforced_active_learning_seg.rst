@@ -1,0 +1,25 @@
+Paper Summary: Reinforced Active Learning for Image Segmentation
+________________________________________________________________
+*Authors: Arantxa Casanova, Pedro O. Pinheiro, Negar Rostamzadeh, Christopher J. Pal*
+
+Source: https://arxiv.org/abs/2002.06583
+
+
+.. raw:: html
+
+        <hr>
+
+
+Why Use Active Learning?
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Real life datasets are typically heavily imbalanced, so performance will be biased to the most represented
+* Active learing helps reduce the amount of labelling required, while focusing only on labelling the data which is actually required by the model
+* Paper combines this with *deep reinforcement learning* using a modified *`deep Q-network` formula* to suit large scale segmentation
+
+	✔️  This methodology required 30% less additional labelled data
+
+	✔️  Helped mitigate *class imbalance*
+
+
+ 

@@ -8,7 +8,7 @@ This section of the site hosts all things related to data science. Paper summari
 	<hr>
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :glob:
 
    data_theory/*

@@ -1,0 +1,12 @@
+Cheatsheets
+____________
+
+.. raw:: html
+
+        <hr>
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+
+   7_cheatsheets/*
