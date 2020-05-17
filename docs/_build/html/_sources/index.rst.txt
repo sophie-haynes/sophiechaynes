@@ -34,7 +34,7 @@ __________
    :includehidden:
 
    _pages/data_theory_intro.rst
-
+   _pages/interesting_intro.rst
 
 
 
