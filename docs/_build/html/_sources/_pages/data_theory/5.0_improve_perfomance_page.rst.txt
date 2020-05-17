@@ -1,0 +1,15 @@
+Improving Performance
+_____________________
+
+This section will describe methods which may help improve model performance, as well as provide guidance on how to troubleshoot poorly performing models.
+
+
+.. raw:: html
+
+        <hr>
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+
+   5_improving_perf/*

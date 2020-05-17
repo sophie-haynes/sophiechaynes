@@ -1,0 +1,43 @@
+Statistics Cheatsheet
+=====================
+
+Mean
+----
+Average value in the data - ``mean = total of all values/number of values in the data``.
+
+Mode
+----
+The most common value in the data - ``mode = values[value_freq.max]``.
+
+Range
+-----
+Range is simply the difference of the highest value and lowest value in the data. This shows the spread of the data, and if comparing categoric variables, allows you to see degrees of variation between the categories. ``range = values.max - values.min``.
+
+Mid Range
+---------
+Variant of range, add highest and lowest values from the data, then divide by two - ``midrange = (values.min + values.max)/2``.
+
+Interquartile Range (IQR)
+--------------------------
+The amount of spread in the middle 50% of a dataset (i.e. 25% to 75% ). Subtracts the median of the first half of the data from the median of the second half of the data. If comparing *categoric* variables, each IQR allows you to see the variation between the categories without being skewed by outliers. ``IRQ = Q3 - Q1``.
+
+Identifying Outliers using IQR ⭐️
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Upper and lower outliers can be calculated using the IQR. ``Lower Outlier Threshold = Q1 - (1.5 * IRQ )`` and ``Upper Outlier Threshold = Q3 - (1.5 * IRQ )``.
+
+Variance (σ)
+____________
+This value helps indicate how *dispersed* the data is - ``σ = (sum((values.each - mean)^^2))/len(values)``. *Standard Deviation* is the same value, but square rooted which makes it clearer when comparing the difference in disparity between *multiple datasets*.
+
+Sample Variance
+~~~~~~~~~~~~~~~
+When you only have a portion of the data, but want to estimate the variance of the entire population, divide instead by the *number of all values minus one*. This produces a more accurate estimation as it helps to counteract bias present in the sample of data you do have.
+However, when using this unbiased sample variance to calculate the sample standard deviation, this *does* produce a biased standard deviation.
+
+Mean and Std. Dev vs Median and IQR ⭐️
+_____________________________________________
+
+If there are outlier values in the data, *mean* and *standard deviation* are going to be impacted severely and typically give a false impression of the data distribution. In this scenario, *median* and *IQR* are a better option.
+
+
+

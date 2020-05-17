@@ -1,0 +1,14 @@
+Dealing with Different Data Types
+_________________________________
+
+This section summarises how to approach different types of data when kicking off a data science project. If there are quirks and problems associated with each data type, they will be outlined here. 
+
+.. raw:: html
+
+        <hr>
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+
+   0_data_types/*

@@ -1,0 +1,14 @@
+Paper Summaries
+_________________
+
+This section will contain notes on interesting papers I read, and my comments on the methodology should I attempt to reproduce.
+
+.. raw:: html
+
+        <hr>
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+
+   6_paper_summaries/*
