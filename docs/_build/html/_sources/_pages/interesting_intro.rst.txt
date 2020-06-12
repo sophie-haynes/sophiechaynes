@@ -8,3 +8,19 @@ __________
 
 - https://openai.com/resources/ ~ Has a lot of material on *Deep Reinforcement Learning* (you know, the cool deep learning)
 - https://github.com/GarrettHoffman/Strata_2018_DL_4_NLP ~ Some DL for NLP material from a paper (note that there's also a neat page linked in the README that discusses RNNs with NLP)
+- https://github.com/mauhai/awesome-jupyterlab - Lists useful jupyter plugins
+
+
+
+
+
+
+.. raw:: html
+
+        <hr>
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+
+   interesting/*

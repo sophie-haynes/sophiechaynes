@@ -1,0 +1,22 @@
+Spinning Up: Algorithms
+================================
+
+The following algorithms have been implemented as standard in Spinning Up:
+- **Vanilla Policy Gradient (VPG):** 
+- **Trust Region Policy Optimization (TRPO):**
+- **Proximal Policy Optimization (PPO):**
+- **Deep Deterministic Policy Gradient (DDPG):**
+- **Twin Delayed DDPG (TD3):**
+- **Soft Actor-Critic (SAC):**
+
+.. todo:: Add Simple Explanations for Included Algorithms
+
+Each algorithm has implementations in both PyTorch and Tensorflow (excluding TRPO, only in Tensorflow). They have been selected as OpenAI believes that these algorithms have both some of the best reliability and efficiency amongst *policy learning algorithms*. Additionally. the expose some of the **trade-offs** present when designing and deploying deep RL algorithms.
+
+On-Policy Algorithms
+----------------------
+These algorithms only use new data, making them weaker on *sample efficiency* (i.e. only looks once) but optimises on *policy performance* as it directly optimises what you are trying predict.
+
+Off-Policy Algorithms
+----------------------
+DDPG and Q-learning (DDPG concurently trains a Q-function + policy), reuse old data (i.e. looks again) and do so efficiently. 

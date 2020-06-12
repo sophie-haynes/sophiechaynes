@@ -1,0 +1,25 @@
+Paper Summary: DetectoRS: Detecting Objects with Recursive Feature Pyramid and Switchable Atrous Convolution (2020)
+====================================================================================================================
+
+*Authors: Siyuan Qiao, Liang-Chieh Chen, Alan Yuille*
+
+Source: https://arxiv.org/abs/2006.02334
+
+.. raw:: html
+
+        <hr>
+
+Approach is based on the **"Look and Think Twice"** concept. This paper boasts state of the art performance on COCO test-dev.
+
+It uses a combination of two architectures:
+
+- **Switchable Atrous Convolution (SAC):** On the *micro* level, it looks twice at the 
+
+
+**Hint** 
+
+-  An *Atrous Convolution* is basically a zoomed out convolution, that maintains the *same dimensions* by only using pixels according to the dilation factor.  
+- *Kernel Size* is the FOV of the convolution (typically a 3x3 pixel grid)
+- *Stride* is the step size between each conv (usually 1)
+- *Padding* adds empty pixels around the image, so that all convolutions have the same dimenions (border conv. aren't missing pixels).
+ 

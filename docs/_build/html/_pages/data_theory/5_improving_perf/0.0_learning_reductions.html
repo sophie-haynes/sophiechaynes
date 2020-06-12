@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#2D2D2D" />
+  
+  <title>Sophie's Brain Dump :: Paper Summary: Learning Reductions that Really Work (2015)</title>
+  
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../../../_static/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../../_static/img/favicon-16x16.png">
+        <link rel="index" title="Index"
+              href="../../../genindex.html"/>
+
+  <link rel="stylesheet" href="../../../_static/css/insegel_custom.css"/>
+
+  <script type="text/javascript">
+    var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'',
+        VERSION:'1.0',
+        LANGUAGE:'None',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+    };
+  </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+
+<!--  <script src="https://email.tl.fortawesome.com/c/eJxNjUEOgyAQAF8jR7Kw6wIHDh7sP1Cw2mgxgmn6-3JsMqc5zEQfE8dkxOY1KKMUOI3ACFKRJpSW2AAp7ontYIaxI6i7XPJVwyeVfCQ550Os3jLrGSNOLgbdAy6s0PBk2TFNjEbsfq31LB0OnX407pJa5v2faRadwSW63mn5KuLyR9j2tgx3zecanl-55R_-jjPs"></script>
+-->
+
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <div id="insegel-container">
+    <header>
+      <div id="logo-container">
+          
+          <a href="../../../index.html"><img src="../../../_static/img/logo.svg"></a>
+          
+
+      </div>
+      <div id="project-container">
+        <h1>Sophie's Brain Dump</h1>
+      </div>
+    </header>
+
+    <div id="content-container">
+
+      <div id="main-content-container">
+        <div id="main-content-header">
+          <h1>Paper Summary: Learning Reductions that Really Work (2015)</h1>
+        </div>
+        <div id="main-content">
+          
+  <div class="section" id="paper-summary-learning-reductions-that-really-work-2015">
+<h1>Paper Summary: Learning Reductions that Really Work (2015)<a class="headerlink" href="#paper-summary-learning-reductions-that-really-work-2015" title="Permalink to this headline">¶</a></h1>
+<p><em>Authors: Alina Beygelzimer, Hal Daumé III, John Langford, Paul Mineiro</em>
+Source: <a class="reference external" href="https://arxiv.org/abs/1502.02704">https://arxiv.org/abs/1502.02704</a></p>
+<hr><p>Reduction is the process of breaking a complex problem into simpler subproblems,which when solved, resolves the initial complex problem.</p>
+<p>Consider the <em>one-against-all</em> reduction, this simplifies a <em>k</em>-way multiclass problem to <em>k</em> binary problems. While there are more problems, they are simpler to solve.</p>
+<p>However, a learning reduction may also produce difficult subproblems, and this should be considered when using this approach.</p>
+<p><em>“Creating a usable interface which is not computationally constraining is critical to success.”</em></p>
+<div class="graphviz"><img src="../../../_images/graphviz-f0e9e4bb64c00c1a917bc33b559c802fa2114092.png" alt="digraph G {
+  rankdir=LR;
+      subgraph cluster_0 {
+              style=filled;
+              color=lightgrey;
+              node [style=filled,color=white];
+              INPUT;
+              label = &quot;Complex Input&quot;;
+      }
+
+      subgraph cluster_1 {
+              style=filled;
+              color=lightgrey;
+              node [style=filled,color=white];
+              TRANSFORM;
+              label = &quot;Break into Simple Examples&quot;;
+      }
+
+      subgraph cluster_2 {
+              style=filled;
+              color=lightgrey;
+              node [style=filled,color=white];
+              PROCESS;
+              label = &quot;Apply Simple Learning Algorithms&quot;;
+      }
+
+      subgraph cluster_3 {
+              style=filled;
+              color=lightgrey;
+              node [style=filled,color=white];
+              OUTPUT;
+              label = &quot;Transform Simple Prediction to Complex&quot;;
+      }
+  INPUT -&gt; TRANSFORM -&gt; PROCESS -&gt; OUTPUT;
+
+  //labelloc=&quot;t&quot;;
+  label=&quot;Learning Reduction Process&quot;;
+  fontsize=19;
+
+}" class="graphviz" /></div>
+</div>
+
+
+        </div>
+      </div>
+
+      <div id="side-menu-container">
+
+        <div id="search" role="search">
+        <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+            <input type="text" name="q" placeholder="Search..." />
+            <input type="hidden" name="check_keywords" value="yes" />
+            <input type="hidden" name="area" value="default" />
+        </form>
+</div>
+
+        <div id="side-menu" role="navigation">
+
+          
+  
+    
+  
+  
+    <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../data_theory_intro.html">Data Science Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../interesting_intro.html">Interesting Resources</a></li>
+</ul>
+
+  
+
+
+        </div>
+
+        
+
+      </div>
+
+    </div>
+
+<footer>
+    <div id="footer-info">
+        <ul id="build-details">
+            
+                <li class="footer-element">
+                    
+                        <a href="../../../_sources/_pages/data_theory/5_improving_perf/0.0_learning_reductions.rst.txt" rel="nofollow"> source</a>
+                    
+                </li>
+            
+
+            
+
+            
+        </ul>
+
+        <!--<div id="credit">
+            created with <a href="http://sphinx-doc.org/">Sphinx</a> and <a href="https://github.com/Autophagy/insegel">Insegel</a>
+
+        </div>-->
+    </div>
+
+    <a id="menu-toggle" class="fa fa-bars" aria-hidden="true"></a>
+
+    <script type="text/javascript">
+      $("#menu-toggle").click(function() {
+        $("#menu-toggle").toggleClass("toggled");
+        $("#side-menu-container").slideToggle(300);
+      });
+    </script>
+
+</footer> 
+
+</div>
+
+</body>
+</html>

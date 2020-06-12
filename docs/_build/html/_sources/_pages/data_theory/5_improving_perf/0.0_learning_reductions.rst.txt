@@ -1,0 +1,67 @@
+Paper Summary: Learning Reductions that Really Work (2015)
+===========================================================
+*Authors: Alina Beygelzimer, Hal Daumé III, John Langford, Paul Mineiro*
+Source: https://arxiv.org/abs/1502.02704
+
+.. raw:: html
+
+        <hr>
+
+
+
+Reduction is the process of breaking a complex problem into simpler subproblems,which when solved, resolves the initial complex problem. 
+
+Consider the *one-against-all* reduction, this simplifies a *k*-way multiclass problem to *k* binary problems. While there are more problems, they are simpler to solve.
+
+However, a learning reduction may also produce difficult subproblems, and this should be considered when using this approach.
+
+*"Creating a usable interface which is not computationally constraining is critical to success."*
+
+
+
+
+
+
+.. graphviz::
+
+  digraph G {
+    rankdir=LR;
+	subgraph cluster_0 {
+		style=filled;
+		color=lightgrey;
+		node [style=filled,color=white];
+		INPUT;
+		label = "Complex Input";
+	}
+
+        subgraph cluster_1 {
+		style=filled;
+		color=lightgrey;
+		node [style=filled,color=white];
+		TRANSFORM;
+		label = "Break into Simple Examples";
+	}
+
+        subgraph cluster_2 {
+		style=filled;
+		color=lightgrey;
+		node [style=filled,color=white];
+		PROCESS;
+		label = "Apply Simple Learning Algorithms";
+	}
+
+        subgraph cluster_3 {
+		style=filled;
+		color=lightgrey;
+		node [style=filled,color=white];
+		OUTPUT;
+		label = "Transform Simple Prediction to Complex";
+	}
+    INPUT -> TRANSFORM -> PROCESS -> OUTPUT;
+        
+    //labelloc="t";
+    label="Learning Reduction Process";
+    fontsize=19;
+	
+  }
+

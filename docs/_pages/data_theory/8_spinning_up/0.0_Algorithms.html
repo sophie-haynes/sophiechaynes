@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#2D2D2D" />
+  
+  <title>Sophie's Brain Dump :: Spinning Up: Algorithms</title>
+  
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../../../_static/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../../_static/img/favicon-16x16.png">
+        <link rel="index" title="Index"
+              href="../../../genindex.html"/>
+
+  <link rel="stylesheet" href="../../../_static/css/insegel_custom.css"/>
+
+  <script type="text/javascript">
+    var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'',
+        VERSION:'1.0',
+        LANGUAGE:'None',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+    };
+  </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+
+<!--  <script src="https://email.tl.fortawesome.com/c/eJxNjUEOgyAQAF8jR7Kw6wIHDh7sP1Cw2mgxgmn6-3JsMqc5zEQfE8dkxOY1KKMUOI3ACFKRJpSW2AAp7ontYIaxI6i7XPJVwyeVfCQ550Os3jLrGSNOLgbdAy6s0PBk2TFNjEbsfq31LB0OnX407pJa5v2faRadwSW63mn5KuLyR9j2tgx3zecanl-55R_-jjPs"></script>
+-->
+
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <div id="insegel-container">
+    <header>
+      <div id="logo-container">
+          
+          <a href="../../../index.html"><img src="../../../_static/img/logo.svg"></a>
+          
+
+      </div>
+      <div id="project-container">
+        <h1>Sophie's Brain Dump</h1>
+      </div>
+    </header>
+
+    <div id="content-container">
+
+      <div id="main-content-container">
+        <div id="main-content-header">
+          <h1>Spinning Up: Algorithms</h1>
+        </div>
+        <div id="main-content">
+          
+  <div class="section" id="spinning-up-algorithms">
+<h1>Spinning Up: Algorithms<a class="headerlink" href="#spinning-up-algorithms" title="Permalink to this headline">¶</a></h1>
+<p>The following algorithms have been implemented as standard in Spinning Up:
+- <strong>Vanilla Policy Gradient (VPG):</strong>
+- <strong>Trust Region Policy Optimization (TRPO):</strong>
+- <strong>Proximal Policy Optimization (PPO):</strong>
+- <strong>Deep Deterministic Policy Gradient (DDPG):</strong>
+- <strong>Twin Delayed DDPG (TD3):</strong>
+- <strong>Soft Actor-Critic (SAC):</strong></p>
+<div class="admonition-todo admonition" id="id1">
+<p class="admonition-title">Todo</p>
+<p>Add Simple Explanations for Included Algorithms</p>
+</div>
+<p>Each algorithm has implementations in both PyTorch and Tensorflow (excluding TRPO, only in Tensorflow). They have been selected as OpenAI believes that these algorithms have both some of the best reliability and efficiency amongst <em>policy learning algorithms</em>. Additionally. the expose some of the <strong>trade-offs</strong> present when designing and deploying deep RL algorithms.</p>
+<div class="section" id="on-policy-algorithms">
+<h2>On-Policy Algorithms<a class="headerlink" href="#on-policy-algorithms" title="Permalink to this headline">¶</a></h2>
+<p>These algorithms only use new data, making them weaker on <em>sample efficiency</em> (i.e. only looks once) but optimises on <em>policy performance</em> as it directly optimises what you are trying predict.</p>
+</div>
+<div class="section" id="off-policy-algorithms">
+<h2>Off-Policy Algorithms<a class="headerlink" href="#off-policy-algorithms" title="Permalink to this headline">¶</a></h2>
+<p>DDPG and Q-learning (DDPG concurently trains a Q-function + policy), reuse old data (i.e. looks again) and do so efficiently.</p>
+</div>
+</div>
+
+
+        </div>
+      </div>
+
+      <div id="side-menu-container">
+
+        <div id="search" role="search">
+        <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+            <input type="text" name="q" placeholder="Search..." />
+            <input type="hidden" name="check_keywords" value="yes" />
+            <input type="hidden" name="area" value="default" />
+        </form>
+</div>
+
+        <div id="side-menu" role="navigation">
+
+          
+  
+    
+  
+  
+    <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../data_theory_intro.html">Data Science Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../interesting_intro.html">Interesting Resources</a></li>
+</ul>
+
+  
+
+
+        </div>
+
+        
+
+      </div>
+
+    </div>
+
+<footer>
+    <div id="footer-info">
+        <ul id="build-details">
+            
+                <li class="footer-element">
+                    
+                        <a href="../../../_sources/_pages/data_theory/8_spinning_up/0.0_Algorithms.rst.txt" rel="nofollow"> source</a>
+                    
+                </li>
+            
+
+            
+
+            
+        </ul>
+
+        <!--<div id="credit">
+            created with <a href="http://sphinx-doc.org/">Sphinx</a> and <a href="https://github.com/Autophagy/insegel">Insegel</a>
+
+        </div>-->
+    </div>
+
+    <a id="menu-toggle" class="fa fa-bars" aria-hidden="true"></a>
+
+    <script type="text/javascript">
+      $("#menu-toggle").click(function() {
+        $("#menu-toggle").toggleClass("toggled");
+        $("#side-menu-container").slideToggle(300);
+      });
+    </script>
+
+</footer> 
+
+</div>
+
+</body>
+</html>

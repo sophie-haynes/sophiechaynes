@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#2D2D2D" />
+  
+  <title>Sophie's Brain Dump :: Paper Summary: DetectoRS: Detecting Objects with Recursive Feature Pyramid and Switchable Atrous Convolution (2020)</title>
+  
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../../../_static/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../../_static/img/favicon-16x16.png">
+        <link rel="index" title="Index"
+              href="../../../genindex.html"/>
+
+  <link rel="stylesheet" href="../../../_static/css/insegel_custom.css"/>
+
+  <script type="text/javascript">
+    var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'',
+        VERSION:'1.0',
+        LANGUAGE:'None',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+    };
+  </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+
+<!--  <script src="https://email.tl.fortawesome.com/c/eJxNjUEOgyAQAF8jR7Kw6wIHDh7sP1Cw2mgxgmn6-3JsMqc5zEQfE8dkxOY1KKMUOI3ACFKRJpSW2AAp7ontYIaxI6i7XPJVwyeVfCQ550Os3jLrGSNOLgbdAy6s0PBk2TFNjEbsfq31LB0OnX407pJa5v2faRadwSW63mn5KuLyR9j2tgx3zecanl-55R_-jjPs"></script>
+-->
+
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <div id="insegel-container">
+    <header>
+      <div id="logo-container">
+          
+          <a href="../../../index.html"><img src="../../../_static/img/logo.svg"></a>
+          
+
+      </div>
+      <div id="project-container">
+        <h1>Sophie's Brain Dump</h1>
+      </div>
+    </header>
+
+    <div id="content-container">
+
+      <div id="main-content-container">
+        <div id="main-content-header">
+          <h1>Paper Summary: DetectoRS: Detecting Objects with Recursive Feature Pyramid and Switchable Atrous Convolution (2020)</h1>
+        </div>
+        <div id="main-content">
+          
+  <div class="section" id="paper-summary-detectors-detecting-objects-with-recursive-feature-pyramid-and-switchable-atrous-convolution-2020">
+<h1>Paper Summary: DetectoRS: Detecting Objects with Recursive Feature Pyramid and Switchable Atrous Convolution (2020)<a class="headerlink" href="#paper-summary-detectors-detecting-objects-with-recursive-feature-pyramid-and-switchable-atrous-convolution-2020" title="Permalink to this headline">¶</a></h1>
+<p><em>Authors: Siyuan Qiao, Liang-Chieh Chen, Alan Yuille</em></p>
+<p>Source: <a class="reference external" href="https://arxiv.org/abs/2006.02334">https://arxiv.org/abs/2006.02334</a></p>
+<hr><p>Approach is based on the <strong>“Look and Think Twice”</strong> concept. This paper boasts state of the art performance on COCO test-dev.</p>
+<p>It uses a combination of two architectures:</p>
+<ul class="simple">
+<li><p><strong>Switchable Atrous Convolution (SAC):</strong> On the <em>micro</em> level, it looks twice at the</p></li>
+</ul>
+<p><strong>Hint</strong></p>
+<ul class="simple">
+<li><p>An <em>Atrous Convolution</em> is basically a zoomed out convolution, that maintains the <em>same dimensions</em> by only using pixels according to the dilation factor.</p></li>
+<li><p><em>Kernel Size</em> is the FOV of the convolution (typically a 3x3 pixel grid)</p></li>
+<li><p><em>Stride</em> is the step size between each conv (usually 1)</p></li>
+<li><p><em>Padding</em> adds empty pixels around the image, so that all convolutions have the same dimenions (border conv. aren’t missing pixels).</p></li>
+</ul>
+</div>
+
+
+        </div>
+      </div>
+
+      <div id="side-menu-container">
+
+        <div id="search" role="search">
+        <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+            <input type="text" name="q" placeholder="Search..." />
+            <input type="hidden" name="check_keywords" value="yes" />
+            <input type="hidden" name="area" value="default" />
+        </form>
+</div>
+
+        <div id="side-menu" role="navigation">
+
+          
+  
+    
+  
+  
+    <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../data_theory_intro.html">Data Science Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../interesting_intro.html">Interesting Resources</a></li>
+</ul>
+
+  
+
+
+        </div>
+
+        
+
+      </div>
+
+    </div>
+
+<footer>
+    <div id="footer-info">
+        <ul id="build-details">
+            
+                <li class="footer-element">
+                    
+                        <a href="../../../_sources/_pages/data_theory/6_paper_summaries/6.2_detectoRS.rst.txt" rel="nofollow"> source</a>
+                    
+                </li>
+            
+
+            
+
+            
+        </ul>
+
+        <!--<div id="credit">
+            created with <a href="http://sphinx-doc.org/">Sphinx</a> and <a href="https://github.com/Autophagy/insegel">Insegel</a>
+
+        </div>-->
+    </div>
+
+    <a id="menu-toggle" class="fa fa-bars" aria-hidden="true"></a>
+
+    <script type="text/javascript">
+      $("#menu-toggle").click(function() {
+        $("#menu-toggle").toggleClass("toggled");
+        $("#side-menu-container").slideToggle(300);
+      });
+    </script>
+
+</footer> 
+
+</div>
+
+</body>
+</html>
